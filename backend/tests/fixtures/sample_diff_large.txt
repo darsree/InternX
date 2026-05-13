@@ -1,0 +1,410 @@
+diff --git a/src/services/DataProcessor.js b/src/services/DataProcessor.js
+index abc123..def456 100644
+--- a/src/services/DataProcessor.js
++++ b/src/services/DataProcessor.js
+@@ -1,10 +1,210 @@
+ // DataProcessor — bulk data transformation service
++import _ from 'lodash'
++
++export class DataProcessor {
++  processRecord_1(data) { return data.map(x => x * 1) }
++  processRecord_2(data) { return data.map(x => x * 2) }
++  processRecord_3(data) { return data.map(x => x * 3) }
++  processRecord_4(data) { return data.map(x => x * 4) }
++  processRecord_5(data) { return data.map(x => x * 5) }
++  processRecord_6(data) { return data.map(x => x * 6) }
++  processRecord_7(data) { return data.map(x => x * 7) }
++  processRecord_8(data) { return data.map(x => x * 8) }
++  processRecord_9(data) { return data.map(x => x * 9) }
++  processRecord_10(data) { return data.map(x => x * 10) }
++  processRecord_11(data) { return data.map(x => x * 11) }
++  processRecord_12(data) { return data.map(x => x * 12) }
++  processRecord_13(data) { return data.map(x => x * 13) }
++  processRecord_14(data) { return data.map(x => x * 14) }
++  processRecord_15(data) { return data.map(x => x * 15) }
++  processRecord_16(data) { return data.map(x => x * 16) }
++  processRecord_17(data) { return data.map(x => x * 17) }
++  processRecord_18(data) { return data.map(x => x * 18) }
++  processRecord_19(data) { return data.map(x => x * 19) }
++  processRecord_20(data) { return data.map(x => x * 20) }
++  processRecord_21(data) { return data.map(x => x * 21) }
++  processRecord_22(data) { return data.map(x => x * 22) }
++  processRecord_23(data) { return data.map(x => x * 23) }
++  processRecord_24(data) { return data.map(x => x * 24) }
++  processRecord_25(data) { return data.map(x => x * 25) }
++  processRecord_26(data) { return data.map(x => x * 26) }
++  processRecord_27(data) { return data.map(x => x * 27) }
++  processRecord_28(data) { return data.map(x => x * 28) }
++  processRecord_29(data) { return data.map(x => x * 29) }
++  processRecord_30(data) { return data.map(x => x * 30) }
++  processRecord_31(data) { return data.map(x => x * 31) }
++  processRecord_32(data) { return data.map(x => x * 32) }
++  processRecord_33(data) { return data.map(x => x * 33) }
++  processRecord_34(data) { return data.map(x => x * 34) }
++  processRecord_35(data) { return data.map(x => x * 35) }
++  processRecord_36(data) { return data.map(x => x * 36) }
++  processRecord_37(data) { return data.map(x => x * 37) }
++  processRecord_38(data) { return data.map(x => x * 38) }
++  processRecord_39(data) { return data.map(x => x * 39) }
++  processRecord_40(data) { return data.map(x => x * 40) }
++  processRecord_41(data) { return data.map(x => x * 41) }
++  processRecord_42(data) { return data.map(x => x * 42) }
++  processRecord_43(data) { return data.map(x => x * 43) }
++  processRecord_44(data) { return data.map(x => x * 44) }
++  processRecord_45(data) { return data.map(x => x * 45) }
++  processRecord_46(data) { return data.map(x => x * 46) }
++  processRecord_47(data) { return data.map(x => x * 47) }
++  processRecord_48(data) { return data.map(x => x * 48) }
++  processRecord_49(data) { return data.map(x => x * 49) }
++  processRecord_50(data) { return data.map(x => x * 50) }
++  processRecord_51(data) { return data.map(x => x * 51) }
++  processRecord_52(data) { return data.map(x => x * 52) }
++  processRecord_53(data) { return data.map(x => x * 53) }
++  processRecord_54(data) { return data.map(x => x * 54) }
++  processRecord_55(data) { return data.map(x => x * 55) }
++  processRecord_56(data) { return data.map(x => x * 56) }
++  processRecord_57(data) { return data.map(x => x * 57) }
++  processRecord_58(data) { return data.map(x => x * 58) }
++  processRecord_59(data) { return data.map(x => x * 59) }
++  processRecord_60(data) { return data.map(x => x * 60) }
++  processRecord_61(data) { return data.map(x => x * 61) }
++  processRecord_62(data) { return data.map(x => x * 62) }
++  processRecord_63(data) { return data.map(x => x * 63) }
++  processRecord_64(data) { return data.map(x => x * 64) }
++  processRecord_65(data) { return data.map(x => x * 65) }
++  processRecord_66(data) { return data.map(x => x * 66) }
++  processRecord_67(data) { return data.map(x => x * 67) }
++  processRecord_68(data) { return data.map(x => x * 68) }
++  processRecord_69(data) { return data.map(x => x * 69) }
++  processRecord_70(data) { return data.map(x => x * 70) }
++  processRecord_71(data) { return data.map(x => x * 71) }
++  processRecord_72(data) { return data.map(x => x * 72) }
++  processRecord_73(data) { return data.map(x => x * 73) }
++  processRecord_74(data) { return data.map(x => x * 74) }
++  processRecord_75(data) { return data.map(x => x * 75) }
++  processRecord_76(data) { return data.map(x => x * 76) }
++  processRecord_77(data) { return data.map(x => x * 77) }
++  processRecord_78(data) { return data.map(x => x * 78) }
++  processRecord_79(data) { return data.map(x => x * 79) }
++  processRecord_80(data) { return data.map(x => x * 80) }
++  processRecord_81(data) { return data.map(x => x * 81) }
++  processRecord_82(data) { return data.map(x => x * 82) }
++  processRecord_83(data) { return data.map(x => x * 83) }
++  processRecord_84(data) { return data.map(x => x * 84) }
++  processRecord_85(data) { return data.map(x => x * 85) }
++  processRecord_86(data) { return data.map(x => x * 86) }
++  processRecord_87(data) { return data.map(x => x * 87) }
++  processRecord_88(data) { return data.map(x => x * 88) }
++  processRecord_89(data) { return data.map(x => x * 89) }
++  processRecord_90(data) { return data.map(x => x * 90) }
++  processRecord_91(data) { return data.map(x => x * 91) }
++  processRecord_92(data) { return data.map(x => x * 92) }
++  processRecord_93(data) { return data.map(x => x * 93) }
++  processRecord_94(data) { return data.map(x => x * 94) }
++  processRecord_95(data) { return data.map(x => x * 95) }
++  processRecord_96(data) { return data.map(x => x * 96) }
++  processRecord_97(data) { return data.map(x => x * 97) }
++  processRecord_98(data) { return data.map(x => x * 98) }
++  processRecord_99(data) { return data.map(x => x * 99) }
++  processRecord_100(data) { return data.map(x => x * 100) }
++  processRecord_101(data) { return data.map(x => x * 101) }
++  processRecord_102(data) { return data.map(x => x * 102) }
++  processRecord_103(data) { return data.map(x => x * 103) }
++  processRecord_104(data) { return data.map(x => x * 104) }
++  processRecord_105(data) { return data.map(x => x * 105) }
++  processRecord_106(data) { return data.map(x => x * 106) }
++  processRecord_107(data) { return data.map(x => x * 107) }
++  processRecord_108(data) { return data.map(x => x * 108) }
++  processRecord_109(data) { return data.map(x => x * 109) }
++  processRecord_110(data) { return data.map(x => x * 110) }
++  processRecord_111(data) { return data.map(x => x * 111) }
++  processRecord_112(data) { return data.map(x => x * 112) }
++  processRecord_113(data) { return data.map(x => x * 113) }
++  processRecord_114(data) { return data.map(x => x * 114) }
++  processRecord_115(data) { return data.map(x => x * 115) }
++  processRecord_116(data) { return data.map(x => x * 116) }
++  processRecord_117(data) { return data.map(x => x * 117) }
++  processRecord_118(data) { return data.map(x => x * 118) }
++  processRecord_119(data) { return data.map(x => x * 119) }
++  processRecord_120(data) { return data.map(x => x * 120) }
++  processRecord_121(data) { return data.map(x => x * 121) }
++  processRecord_122(data) { return data.map(x => x * 122) }
++  processRecord_123(data) { return data.map(x => x * 123) }
++  processRecord_124(data) { return data.map(x => x * 124) }
++  processRecord_125(data) { return data.map(x => x * 125) }
++  processRecord_126(data) { return data.map(x => x * 126) }
++  processRecord_127(data) { return data.map(x => x * 127) }
++  processRecord_128(data) { return data.map(x => x * 128) }
++  processRecord_129(data) { return data.map(x => x * 129) }
++  processRecord_130(data) { return data.map(x => x * 130) }
++  processRecord_131(data) { return data.map(x => x * 131) }
++  processRecord_132(data) { return data.map(x => x * 132) }
++  processRecord_133(data) { return data.map(x => x * 133) }
++  processRecord_134(data) { return data.map(x => x * 134) }
++  processRecord_135(data) { return data.map(x => x * 135) }
++  processRecord_136(data) { return data.map(x => x * 136) }
++  processRecord_137(data) { return data.map(x => x * 137) }
++  processRecord_138(data) { return data.map(x => x * 138) }
++  processRecord_139(data) { return data.map(x => x * 139) }
++  processRecord_140(data) { return data.map(x => x * 140) }
++  processRecord_141(data) { return data.map(x => x * 141) }
++  processRecord_142(data) { return data.map(x => x * 142) }
++  processRecord_143(data) { return data.map(x => x * 143) }
++  processRecord_144(data) { return data.map(x => x * 144) }
++  processRecord_145(data) { return data.map(x => x * 145) }
++  processRecord_146(data) { return data.map(x => x * 146) }
++  processRecord_147(data) { return data.map(x => x * 147) }
++  processRecord_148(data) { return data.map(x => x * 148) }
++  processRecord_149(data) { return data.map(x => x * 149) }
++  processRecord_150(data) { return data.map(x => x * 150) }
++  processRecord_151(data) { return data.map(x => x * 151) }
++  processRecord_152(data) { return data.map(x => x * 152) }
++  processRecord_153(data) { return data.map(x => x * 153) }
++  processRecord_154(data) { return data.map(x => x * 154) }
++  processRecord_155(data) { return data.map(x => x * 155) }
++  processRecord_156(data) { return data.map(x => x * 156) }
++  processRecord_157(data) { return data.map(x => x * 157) }
++  processRecord_158(data) { return data.map(x => x * 158) }
++  processRecord_159(data) { return data.map(x => x * 159) }
++  processRecord_160(data) { return data.map(x => x * 160) }
++  processRecord_161(data) { return data.map(x => x * 161) }
++  processRecord_162(data) { return data.map(x => x * 162) }
++  processRecord_163(data) { return data.map(x => x * 163) }
++  processRecord_164(data) { return data.map(x => x * 164) }
++  processRecord_165(data) { return data.map(x => x * 165) }
++  processRecord_166(data) { return data.map(x => x * 166) }
++  processRecord_167(data) { return data.map(x => x * 167) }
++  processRecord_168(data) { return data.map(x => x * 168) }
++  processRecord_169(data) { return data.map(x => x * 169) }
++  processRecord_170(data) { return data.map(x => x * 170) }
++  processRecord_171(data) { return data.map(x => x * 171) }
++  processRecord_172(data) { return data.map(x => x * 172) }
++  processRecord_173(data) { return data.map(x => x * 173) }
++  processRecord_174(data) { return data.map(x => x * 174) }
++  processRecord_175(data) { return data.map(x => x * 175) }
++  processRecord_176(data) { return data.map(x => x * 176) }
++  processRecord_177(data) { return data.map(x => x * 177) }
++  processRecord_178(data) { return data.map(x => x * 178) }
++  processRecord_179(data) { return data.map(x => x * 179) }
++  processRecord_180(data) { return data.map(x => x * 180) }
++  processRecord_181(data) { return data.map(x => x * 181) }
++  processRecord_182(data) { return data.map(x => x * 182) }
++  processRecord_183(data) { return data.map(x => x * 183) }
++  processRecord_184(data) { return data.map(x => x * 184) }
++  processRecord_185(data) { return data.map(x => x * 185) }
++  processRecord_186(data) { return data.map(x => x * 186) }
++  processRecord_187(data) { return data.map(x => x * 187) }
++  processRecord_188(data) { return data.map(x => x * 188) }
++  processRecord_189(data) { return data.map(x => x * 189) }
++  processRecord_190(data) { return data.map(x => x * 190) }
++  processRecord_191(data) { return data.map(x => x * 191) }
++  processRecord_192(data) { return data.map(x => x * 192) }
++  processRecord_193(data) { return data.map(x => x * 193) }
++  processRecord_194(data) { return data.map(x => x * 194) }
++  processRecord_195(data) { return data.map(x => x * 195) }
++  processRecord_196(data) { return data.map(x => x * 196) }
++  processRecord_197(data) { return data.map(x => x * 197) }
++  processRecord_198(data) { return data.map(x => x * 198) }
++  processRecord_199(data) { return data.map(x => x * 199) }
++  processRecord_200(data) { return data.map(x => x * 200) }
+-  oldRecord_1(data) { return data }
+-  oldRecord_2(data) { return data }
+-  oldRecord_3(data) { return data }
+-  oldRecord_4(data) { return data }
+-  oldRecord_5(data) { return data }
+-  oldRecord_6(data) { return data }
+-  oldRecord_7(data) { return data }
+-  oldRecord_8(data) { return data }
+-  oldRecord_9(data) { return data }
+-  oldRecord_10(data) { return data }
+-  oldRecord_11(data) { return data }
+-  oldRecord_12(data) { return data }
+-  oldRecord_13(data) { return data }
+-  oldRecord_14(data) { return data }
+-  oldRecord_15(data) { return data }
+-  oldRecord_16(data) { return data }
+-  oldRecord_17(data) { return data }
+-  oldRecord_18(data) { return data }
+-  oldRecord_19(data) { return data }
+-  oldRecord_20(data) { return data }
+-  oldRecord_21(data) { return data }
+-  oldRecord_22(data) { return data }
+-  oldRecord_23(data) { return data }
+-  oldRecord_24(data) { return data }
+-  oldRecord_25(data) { return data }
+-  oldRecord_26(data) { return data }
+-  oldRecord_27(data) { return data }
+-  oldRecord_28(data) { return data }
+-  oldRecord_29(data) { return data }
+-  oldRecord_30(data) { return data }
+-  oldRecord_31(data) { return data }
+-  oldRecord_32(data) { return data }
+-  oldRecord_33(data) { return data }
+-  oldRecord_34(data) { return data }
+-  oldRecord_35(data) { return data }
+-  oldRecord_36(data) { return data }
+-  oldRecord_37(data) { return data }
+-  oldRecord_38(data) { return data }
+-  oldRecord_39(data) { return data }
+-  oldRecord_40(data) { return data }
+-  oldRecord_41(data) { return data }
+-  oldRecord_42(data) { return data }
+-  oldRecord_43(data) { return data }
+-  oldRecord_44(data) { return data }
+-  oldRecord_45(data) { return data }
+-  oldRecord_46(data) { return data }
+-  oldRecord_47(data) { return data }
+-  oldRecord_48(data) { return data }
+-  oldRecord_49(data) { return data }
+-  oldRecord_50(data) { return data }
+-  oldRecord_51(data) { return data }
+-  oldRecord_52(data) { return data }
+-  oldRecord_53(data) { return data }
+-  oldRecord_54(data) { return data }
+-  oldRecord_55(data) { return data }
+-  oldRecord_56(data) { return data }
+-  oldRecord_57(data) { return data }
+-  oldRecord_58(data) { return data }
+-  oldRecord_59(data) { return data }
+-  oldRecord_60(data) { return data }
+-  oldRecord_61(data) { return data }
+-  oldRecord_62(data) { return data }
+-  oldRecord_63(data) { return data }
+-  oldRecord_64(data) { return data }
+-  oldRecord_65(data) { return data }
+-  oldRecord_66(data) { return data }
+-  oldRecord_67(data) { return data }
+-  oldRecord_68(data) { return data }
+-  oldRecord_69(data) { return data }
+-  oldRecord_70(data) { return data }
+-  oldRecord_71(data) { return data }
+-  oldRecord_72(data) { return data }
+-  oldRecord_73(data) { return data }
+-  oldRecord_74(data) { return data }
+-  oldRecord_75(data) { return data }
+-  oldRecord_76(data) { return data }
+-  oldRecord_77(data) { return data }
+-  oldRecord_78(data) { return data }
+-  oldRecord_79(data) { return data }
+-  oldRecord_80(data) { return data }
+-  oldRecord_81(data) { return data }
+-  oldRecord_82(data) { return data }
+-  oldRecord_83(data) { return data }
+-  oldRecord_84(data) { return data }
+-  oldRecord_85(data) { return data }
+-  oldRecord_86(data) { return data }
+-  oldRecord_87(data) { return data }
+-  oldRecord_88(data) { return data }
+-  oldRecord_89(data) { return data }
+-  oldRecord_90(data) { return data }
+-  oldRecord_91(data) { return data }
+-  oldRecord_92(data) { return data }
+-  oldRecord_93(data) { return data }
+-  oldRecord_94(data) { return data }
+-  oldRecord_95(data) { return data }
+-  oldRecord_96(data) { return data }
+-  oldRecord_97(data) { return data }
+-  oldRecord_98(data) { return data }
+-  oldRecord_99(data) { return data }
+-  oldRecord_100(data) { return data }
+-  oldRecord_101(data) { return data }
+-  oldRecord_102(data) { return data }
+-  oldRecord_103(data) { return data }
+-  oldRecord_104(data) { return data }
+-  oldRecord_105(data) { return data }
+-  oldRecord_106(data) { return data }
+-  oldRecord_107(data) { return data }
+-  oldRecord_108(data) { return data }
+-  oldRecord_109(data) { return data }
+-  oldRecord_110(data) { return data }
+-  oldRecord_111(data) { return data }
+-  oldRecord_112(data) { return data }
+-  oldRecord_113(data) { return data }
+-  oldRecord_114(data) { return data }
+-  oldRecord_115(data) { return data }
+-  oldRecord_116(data) { return data }
+-  oldRecord_117(data) { return data }
+-  oldRecord_118(data) { return data }
+-  oldRecord_119(data) { return data }
+-  oldRecord_120(data) { return data }
+-  oldRecord_121(data) { return data }
+-  oldRecord_122(data) { return data }
+-  oldRecord_123(data) { return data }
+-  oldRecord_124(data) { return data }
+-  oldRecord_125(data) { return data }
+-  oldRecord_126(data) { return data }
+-  oldRecord_127(data) { return data }
+-  oldRecord_128(data) { return data }
+-  oldRecord_129(data) { return data }
+-  oldRecord_130(data) { return data }
+-  oldRecord_131(data) { return data }
+-  oldRecord_132(data) { return data }
+-  oldRecord_133(data) { return data }
+-  oldRecord_134(data) { return data }
+-  oldRecord_135(data) { return data }
+-  oldRecord_136(data) { return data }
+-  oldRecord_137(data) { return data }
+-  oldRecord_138(data) { return data }
+-  oldRecord_139(data) { return data }
+-  oldRecord_140(data) { return data }
+-  oldRecord_141(data) { return data }
+-  oldRecord_142(data) { return data }
+-  oldRecord_143(data) { return data }
+-  oldRecord_144(data) { return data }
+-  oldRecord_145(data) { return data }
+-  oldRecord_146(data) { return data }
+-  oldRecord_147(data) { return data }
+-  oldRecord_148(data) { return data }
+-  oldRecord_149(data) { return data }
+-  oldRecord_150(data) { return data }
+-  oldRecord_151(data) { return data }
+-  oldRecord_152(data) { return data }
+-  oldRecord_153(data) { return data }
+-  oldRecord_154(data) { return data }
+-  oldRecord_155(data) { return data }
+-  oldRecord_156(data) { return data }
+-  oldRecord_157(data) { return data }
+-  oldRecord_158(data) { return data }
+-  oldRecord_159(data) { return data }
+-  oldRecord_160(data) { return data }
+-  oldRecord_161(data) { return data }
+-  oldRecord_162(data) { return data }
+-  oldRecord_163(data) { return data }
+-  oldRecord_164(data) { return data }
+-  oldRecord_165(data) { return data }
+-  oldRecord_166(data) { return data }
+-  oldRecord_167(data) { return data }
+-  oldRecord_168(data) { return data }
+-  oldRecord_169(data) { return data }
+-  oldRecord_170(data) { return data }
+-  oldRecord_171(data) { return data }
+-  oldRecord_172(data) { return data }
+-  oldRecord_173(data) { return data }
+-  oldRecord_174(data) { return data }
+-  oldRecord_175(data) { return data }
+-  oldRecord_176(data) { return data }
+-  oldRecord_177(data) { return data }
+-  oldRecord_178(data) { return data }
+-  oldRecord_179(data) { return data }
+-  oldRecord_180(data) { return data }
+-  oldRecord_181(data) { return data }
+-  oldRecord_182(data) { return data }
+-  oldRecord_183(data) { return data }
+-  oldRecord_184(data) { return data }
+-  oldRecord_185(data) { return data }
+-  oldRecord_186(data) { return data }
+-  oldRecord_187(data) { return data }
+-  oldRecord_188(data) { return data }
+-  oldRecord_189(data) { return data }
+-  oldRecord_190(data) { return data }
+-  oldRecord_191(data) { return data }
+-  oldRecord_192(data) { return data }
+-  oldRecord_193(data) { return data }
+-  oldRecord_194(data) { return data }
+-  oldRecord_195(data) { return data }
+-  oldRecord_196(data) { return data }
+-  oldRecord_197(data) { return data }
+-  oldRecord_198(data) { return data }
+-  oldRecord_199(data) { return data }
+-  oldRecord_200(data) { return data }
+}
