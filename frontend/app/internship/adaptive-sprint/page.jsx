@@ -336,8 +336,6 @@ function StageBreadcrumb({ sprint1Done, adaptiveLocked }) {
 
 // ── Main page ─────────────────────────────────────────────────────────────────
 export default function AdaptiveSprintPage() {
-  const supabase = createClientComponentClient();
-
   const [progress,  setProgress]  = useState(null);
   const [scoreData, setScoreData] = useState(null);
   const [loading,   setLoading]   = useState(true);
